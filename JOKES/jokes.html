@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOKES</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+</head>
+
+  
+  <body style="background-image: url(jokes.png);
+   background-size: cover;">
+   
+
+<!--heading starts here-->
+   <h1 class="starter-template m-5 p-5 display-2 text-light"
+   style="background-color:red;
+   opacity:0.8;
+   font-weight: bolder;
+   text-align: center;
+   border-radius:30px;">JOKE OF THE DAY</h1>
+<!--heading ends here-->
+
+
+<!--button starts here-->
+    <center>
+    <button class="btn btn-primary m-5 p-3" 
+     data-toggle="modal" 
+     data-target="#exampleModalCenter"
+    style="font-size:50px;
+    border-radius:20px;
+    opacity:0.9;">
+    CLICK HERE</button>
+    </center>
+<!--    button ends here-->
+
+
+
+<!-- Modal starts here-->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content bg-primary text-light" style="border-radius: 40px;
+     height: 370px;
+     width:900px">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLongTitle">JOKE OF THE DAY</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        
+      <p id="hi"
+      style="text-align: center;
+      font-size:20px;">
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" onclick="hello()">Click to get a joke</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--modal ends here-->
+
+
+
+<!--js starts here-->
+    <script>
+    function hello()
+    { var a=["Single women claim that all the good men are married, while all married women complain about their lousy husbands. This confirms that there is no such thing as a good man. This confirms too, that women are always confused and don't know what they want.",
+    "Siri, why am I still single? Siri activates front camera.",
+    "My girlfriend told me that will change me.  I thought she was referring to the character, but she found a new boyfriend!",
+    "Why fall in love when you can fall asleep?",
+    "Single and ready to get nervous around anyone I find attractive.",
+    "How many programmers does it take to change a light bulb?&nbspNone – It’s a hardware problem",
+    "There are only 10 kinds of people in this world: those who know binary and those who don’t.",
+    "Programming is 10% science, 20% ingenuity, and 70% getting the ingenuity to work with the science.",
+    "There are three kinds of lies: Lies, damned lies, and benchmarks.",
+    "All programmers are playwrights, and all computers are lousy actors."]
+    var randomal=Math.floor(Math.random()*10);
+    document.getElementById('hi').textContent=a[randomal];
+   }
+        </script>
+<!--js ends here-->
+    
+
+
+</body>
+</html>
